@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Article from "./pages/Article";
-
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <div className="App">
@@ -24,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/articles/:id" element={<Article />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
